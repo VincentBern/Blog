@@ -1,19 +1,83 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156584691-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-156584691-1');
+  </script>
+
+  <meta charset="utf-8">
   <title>Hello World</title>
   <meta name="description" content="Design & Patterns">
   <meta name="author" content="Vincent Bernard">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
 </head>
 
-<body>
-  <h1>Hello World</h1>
+<body style="margin: 0px;">
+
+  <div class="vh-wrapper">
+    <header>
+      <h1>Design & Patterns</h1>
+      <div class="menu-container">
+        <span class="subtitle">The world is made of systems.</span>
+        <input type="text" placeholder="Search..">
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <h2>Second Article</h2>
+        <span class="article-date">January 21 2020</span>
+        <div>
+          Morbi interdum, nulla ut pulvinar iaculis, est orci finibus elit, et sagittis purus ipsum nec neque.
+          Vestibulum tempus, nunc in molestie consectetur, nulla quam porttitor nulla, eu dapibus nulla nunc in mauris.
+          <a href="https://google.ca">Etiam id nulla velit</a> etiam nec sapien in velit ullamcorper finibus. Nunc
+          malesuada pretium justo a lobortis. Duis aliquam augue vitae mauris scelerisque faucibus. Pellentesque at
+          massa et nulla consectetur venenatis at rutrum velit. Vivamus ligula odio, sagittis aliquam est at, rutrum
+          porta nulla. Etiam id nulla velit. Quisque eget ligula ac erat suscipit porttitor. Donec felis purus,
+          tincidunt et libero in, accumsan commodo leo. Maecenas vitae faucibus erat. Vestibulum sit amet ante
+          efficitur, hendrerit arcu eu, vulputate tellus. Mauris euismod lorem a odio pretium consequat. Nullam
+          dignissim est ut ex egestas, et faucibus lectus tempor. Suspendisse ullamcorper ut dolor nec blandit.
+        </div>
+        <!-- <img src="img/article1.png" /> -->
+      </article>
+      <article>
+        <h2>First Article</h2>
+        <span class="article-date">January 20 2020</span>
+        <div>
+          Morbi interdum, nulla ut pulvinar iaculis, est orci finibus elit, et sagittis purus ipsum nec neque.
+          Vestibulum tempus, nunc in molestie consectetur, nulla quam porttitor nulla, eu dapibus nulla nunc in mauris.
+          Etiam nec sapien in velit ullamcorper finibus. Nunc malesuada pretium justo a lobortis. Duis aliquam augue
+          vitae mauris scelerisque faucibus. Pellentesque at massa et nulla consectetur venenatis at rutrum velit.
+          Vivamus ligula odio, sagittis aliquam est at, rutrum porta nulla. Etiam id nulla velit. Quisque eget ligula ac
+          erat suscipit porttitor. Donec felis purus, tincidunt et libero in, accumsan commodo leo. Maecenas vitae
+          faucibus erat. Vestibulum sit amet ante efficitur, hendrerit arcu eu, vulputate tellus. Mauris euismod lorem a
+          odio pretium consequat. Nullam dignissim est ut ex egestas, et faucibus lectus tempor. Suspendisse ullamcorper
+          ut dolor nec blandit.
+        </div>
+        <img src="img/article1.png" />
+      </article>
+    </main>
+
+  </div>
+
+  <footer>
+    <div class="menu-container">
+      <div class="icon twitter">Twitter</div>
+      <div class="icon linkedin">LinkedIn</div>
+    </div>
+
+  </footer>
+
   <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
 </body>
+
 </html>
